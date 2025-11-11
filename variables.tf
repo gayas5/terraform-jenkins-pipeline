@@ -26,7 +26,7 @@ variable "ami" {
 variable "instance_type" {
    type        = string
    description = "Instance type"
-   default     = "t2.micro"
+   default     = "t3.micro"
 }
 
 variable "name_tag" {
@@ -34,4 +34,5 @@ variable "name_tag" {
    description = "Name of the EC2 instance"
    default     = "Terraform-plugin"
 }
+
 
