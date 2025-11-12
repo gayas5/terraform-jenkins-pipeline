@@ -13,7 +13,7 @@ variable "aws_secret_key" {
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "eu-north-1"
+  default     = "us-east-1"
 }
 
 
@@ -34,6 +34,7 @@ variable "name_tag" {
    description = "Name of the EC2 instance"
    default     = "Terraform-02"
 }
+
 
 
 
