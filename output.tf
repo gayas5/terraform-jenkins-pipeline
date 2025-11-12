@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "public_instance" {
@@ -29,3 +29,4 @@ output "instance_id" {
   value       = aws_instance.public_instance.id
   description = "Instance ID"
 }
+
