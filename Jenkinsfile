@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     environment {
-        AWS_DEFAULT_REGION = 'eu-north-1'
+        AWS_DEFAULT_REGION = 'us-east-1'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'feature', url: 'https://github.com/gowtham4s/terraform-jenkins-pipeline.git'
+                git branch: 'feature', url: 'https://github.com/gayas5/terraform-jenkins-pipeline.git'
             }
         }
 
@@ -25,5 +25,6 @@ pipeline {
         }
     }
 }
+
 
 
